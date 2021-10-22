@@ -27,7 +27,11 @@ a:visited {
     display: table;
     clear: both;
 }
-
+.clearfix-noimg::after {
+    content: '';
+    display: table;
+    clear: left; /*img ha float dx*/
+}
 /* width */
 .width-100 {
     width: 100%;
@@ -38,10 +42,23 @@ a:visited {
 .width-70 {
     width: 70%;
 }
+.width-65 {
+    width: 65%;
+}
+.width-30 {
+    width: 30%;
+}
 /* /width */
 /* button */
+[class^="btn-"]:hover {
+    cursor: pointer;
+}
 .btn-blue {
     background-color: var(--blue-color);
+    color: white;
+}
+.btn-blue:visited {
+    color: white;
 }
 .btn-short {
     padding: 0.3em 1em;
@@ -71,6 +88,9 @@ a:visited {
 /* /border */
 
 /* margin */
+.mg-t-1 {
+    margin-top: 1em;
+}
 .mg-t-5 {
     margin-top: 5em;
 }
@@ -80,13 +100,34 @@ a:visited {
 .mg-l-1 {
     margin-left: 1em;
 }
+.mg-b-3 {
+    margin-bottom: 3em;
+}
+.mg-b-1 {
+    margin-bottom: 1em;
+}
+.mg-b-2 {
+    margin-bottom: 2em;
+}
+.mg-b-3 {
+    margin-bottom: 3em;
+}
 /* /margin */
 /* padding */
 .pd-r-1 {
     padding-right: 1em;
 }
+.pd-r-4 {
+    padding-right: 4em;
+}
 .pd-l-1 {
     padding-left: 1em;
+}
+.pd-t-6 {
+    padding-top: 6em;
+}
+.pd-b-7 {
+    padding-bottom: 7em;
 }
 /* /padding */
 /* float */
@@ -107,6 +148,8 @@ a:visited {
     top:0;
     left:0;
     z-index: 10;
+    /* overflow-y: visible;
+    overflow-x: scroll; */
 }
 
 .fixed-bar .container,
@@ -123,7 +166,25 @@ nav > a {
 
 /* jumbotron */
 .jumbotron-container {
-    height: 100px;
     background-color: var(--light-blue-color);
+    height: 100%;
+    overflow: visible;
+}
+
+.jumbo-title {
+    font-size: 4.5em;
+}
+.jumbo-paragraph,
+.jumbo-cancel-msg {
+    font-size: 0.9em;
+}
+.jumbo-cancel-msg {
+    display: block;
 }
 /* /jumbotron */
+svg {
+    width: 10%;
+}
+a:visited svg {
+    color: black;
+}
