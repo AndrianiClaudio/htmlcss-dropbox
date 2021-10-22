@@ -1,11 +1,12 @@
 /* variabili colore */
 :root {
     --blue-color: #297afe;
+    --light-blue-color: #b4d0e7;
 }
 /* variabili colore*/
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -77,7 +78,7 @@ a:visited {
     margin-right:1em;
 }
 .mg-l-1 {
-    margin-left 1em;;
+    margin-left: 1em;
 }
 /* /margin */
 /* padding */
@@ -99,16 +100,18 @@ a:visited {
 
 /* navbar-fixed */
 .fixed-bar {
+    background-color: white;
     position: fixed;
     height: 5em;
     line-height: 5em;
     top:0;
     left:0;
+    z-index: 10;
 }
 
-header .container,
-header .logo,
-header nav {
+.fixed-bar .container,
+.fixed-bar nav,
+header .logo {
     display: inline-block;
 }
 #logo,
@@ -117,3 +120,10 @@ nav > a {
     vertical-align: middle;
 }
 /* /navbar-fixed */
+
+/* jumbotron */
+.jumbotron-container {
+    height: 100px;
+    background-color: var(--light-blue-color);
+}
+/* /jumbotron */
