@@ -1,79 +1,63 @@
 /* --- general ---*/
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    /*  */
-    border: 1px solid black;
-    /*  */
 }
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
 }
-/* float */
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
 }
-.float-l {
-    float: left;
-}
-.float-r {
-    float: right;
-}
-/* /float */
-/* link */
-a {
-    text-decoration: none;
-}
-/* link */
-/* margin */
-.pdl-1 {
-    padding-left: 1em;
-}
-.pdl-2 {
-    padding-left: 2em;
-}
-.pdr-1 {
-    padding-right: 1em;
-}
-/* margin */
-/* --- /general ---/
 
-/* --- header section ---*/
-nav {
-    display: inline-block;
-    position: fixed;
-    top:0;
-    left:0;
-    height: 4.5em;
-    line-height: 4.5em;
-    width: 100vw;
-    color: black;
-    overflow: hidden;
-    font-size: 0.9em;
-    font-weight: bold;
+.width-80 {
+    width: 80%;
 }
-nav a:visited {
-    color: black;
+.width-70 {
+    width: 70%;
 }
+:root {
+    --blue-color: #297afe;
+}
+/* button */
+.btn-blue {
+    background-color: var(--blue-color);
+}
+.btn-short {
+    padding: 0.3em 1em;
+}
+.btn-medium {
+    padding: 0.3em 2.25em;
+}
+.btn-long {
+    padding: 0.3em 3.5em;
+}
+/* button */
 
+/* link acquista ora */
+.buy-now {
+    color: var(--blue-color);
+    text-decoration: underline;
+}
+.buy-now:visited {
+    color: var(--blue-color);
+}
+/* link acquista ora */
 
-/* allineamento e dimensioni  */
-nav .float-l,
-nav .float-r {
-    height: 100%;
+/* /border */
+.brd-1 {
+    border: 1px solid black;
 }
-nav .float-l {
-    width: 65%;
-}
-nav .float-r {
-    width: 35%;
-}
-nav .float-l > img,
-nav [class^="float"] > a {
-    vertical-align: middle;
-}
-/* /allineamento  */
+/* /border */
