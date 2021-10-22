@@ -1,23 +1,19 @@
-/* global */
+/* --- general ---*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+/* float */
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
 }
-/* /global */
-
-nav {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100vw;
-}
-/* float */
 .float-l {
     float: left;
 }
@@ -25,13 +21,38 @@ nav {
     float: right;
 }
 /* /float */
+a {
+    text-decoration: none;
+}
+/* --- /general ---/
 
-/* test/provvisorio  */
+/* --- header section ---*/
 nav {
-    height: 80px;
+    display: inline-block;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 3em;
+    line-height: 3em;
+    width: 100vw;
+    color: black;
 }
-[class^="float-"] {
-    height: 80px;
-    width: 50%;
+nav .float-l,
+nav .float-r {
+    height: 100%;
 }
-/* /test/provvisorio  */
+nav .float-l  * {
+    padding: 0 0.7em 0 0.5em;
+}
+img {
+    vertical-align: middle;
+}
+nav ul,
+nav li {
+    vertical-align: middle;
+    display: inline-block;
+    list-style-type: none;
+}
+nav a:visited {
+    color: black;
+}
