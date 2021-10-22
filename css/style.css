@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*  */
+    border: 1px solid black;
+    /*  */
 }
 html {
     font-family: 'Open Sans', sans-serif;
@@ -21,9 +24,22 @@ html {
     float: right;
 }
 /* /float */
+/* link */
 a {
     text-decoration: none;
 }
+/* link */
+/* margin */
+.pdl-1 {
+    padding-left: 1em;
+}
+.pdl-2 {
+    padding-left: 2em;
+}
+.pdr-1 {
+    padding-right: 1em;
+}
+/* margin */
 /* --- /general ---/
 
 /* --- header section ---*/
@@ -32,27 +48,32 @@ nav {
     position: fixed;
     top:0;
     left:0;
-    height: 3em;
-    line-height: 3em;
+    height: 4.5em;
+    line-height: 4.5em;
     width: 100vw;
     color: black;
-}
-nav .float-l,
-nav .float-r {
-    height: 100%;
-}
-nav .float-l  * {
-    padding: 0 0.7em 0 0.5em;
-}
-img {
-    vertical-align: middle;
-}
-nav ul,
-nav li {
-    vertical-align: middle;
-    display: inline-block;
-    list-style-type: none;
+    overflow: hidden;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 nav a:visited {
     color: black;
 }
+
+
+/* allineamento e dimensioni  */
+nav .float-l,
+nav .float-r {
+    height: 100%;
+}
+nav .float-l {
+    width: 65%;
+}
+nav .float-r {
+    width: 35%;
+}
+nav .float-l > img,
+nav [class^="float"] > a {
+    vertical-align: middle;
+}
+/* /allineamento  */
