@@ -1,7 +1,7 @@
 /* variabili colore */
 :root {
     --button-color: #0061ff;
-    --border-color: lightgrey;
+    --border-color: darkgrey;
     --jumbo-color: #b4d0e7;
 }
 /* variabili colore*/
@@ -14,6 +14,10 @@
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
 
 a {
@@ -128,6 +132,12 @@ a:hover {
 .width-100 {
     width: 100%;
 }
+.width-95 {
+    width: 95%;
+}
+.width-90 {
+    width:90%;
+}
 .width-85 {
     width: 85%;
 }
@@ -142,6 +152,12 @@ a:hover {
 }
 .width-10 {
     width: 10%;
+}
+.width-5 {
+    width: 5%;
+}
+.plane-detail .clearfix > div {
+    display: inline-block;
 }
 /* /width */
 /* button */
@@ -162,9 +178,9 @@ a:hover {
 .btn-short {
     padding: 0.3em 1em;
 }
-/* .btn-medium {
+.btn-medium {
     padding: 0.3em 2.25em;
-} */
+}
 .btn-long {
     padding: 0.3em 3.5em;
 }
@@ -277,16 +293,12 @@ a:visited svg {
 }
 
 .plane-col svg {
-    height: 1em;
+    height: 0.9em;
     vertical-align: middle;
 }
 .plane-for {
     /* font-size: 1.2em; */
     vertical-align: middle;
-}
-.plane-col main header
-{
-    line-height: 2em;
 }
 .plane-name > h3 {
     font-size: 1.5em;
@@ -296,11 +308,11 @@ a:visited svg {
     font-weight: bold;
 }
 .plane-price-period span {
-    color: darkgrey;
+    color: var(--border-color);
     font-size: 0.85em;
 }
 
-.plane-detail * {
+.plane-col main {
     font-size: 0.92em;
 }
 .plane-user-num span,
@@ -310,9 +322,18 @@ a:visited svg {
 }
 .plane-try-free .btn-blue {
     display: inline-block;
-    font-size: 1em;
     width: 100%;
+    line-height: 1.8em;
+}
+.mini-hr {
+    margin-left: 0;
+    width: 25%;
+    border: 0.5px solid var(--border-color);
 }
 /* /main */
 /* footer */
 /* /footer */
+
+.svg-inline--fa.fa-check.fa-w-16 {
+    fill: var(--button-color);
+}
