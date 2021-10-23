@@ -1,7 +1,8 @@
 /* variabili colore */
 :root {
-    --blue-color: #297afe;
-    --light-blue-color: #b4d0e7;
+    --button-color: #297afe;
+    --border-color: lightgrey;
+    --jumbo-color: #b4d0e7;
 }
 /* variabili colore*/
 
@@ -35,10 +36,7 @@ a:visited {
 
 /* /border */
 .brd-1 {
-    border: 1px solid black;
-}
-.brd-1-light {
-    border: 1px solid lightgrey;
+    border: 1px solid var(--border-color);
 }
 /* /border */
 
@@ -127,7 +125,7 @@ a:visited {
     cursor: pointer;
 }
 .btn-blue {
-    background-color: var(--blue-color);
+    background-color: var(--button-color);
     color: white;
 }
 .btn-blue:visited {
@@ -146,11 +144,11 @@ a:visited {
 
 /* link acquista ora */
 .buy-now {
-    color: var(--blue-color);
+    color: var(--button-color);
     text-decoration: underline;
 }
 .buy-now:visited {
-    color: var(--blue-color);
+    color: var(--button-color);
 }
 /* link acquista ora */
 
@@ -181,9 +179,8 @@ nav > a {
 
 /* jumbotron */
 .jumbo-container {
-    background-color: var(--light-blue-color);
+    background-color: var(--jumbo-color);
     height: 100%;
-    overflow: visible;
 }
 
 .jumbo-title {
@@ -200,18 +197,13 @@ nav > a {
 a:visited svg {
     color: black;
 }
+.arrow-down svg {
+    vertical-align: top;
+}
 /* /jumbotron */
 
 /* main */
-.billing-container .row .col.width-30 {
-    height: 350px;
-    background-color: red;
-}
-.billing-container .row > .row {
-    height: 100px;
-    background-color: blue;
-}
-.billing-container .row .col.mg-calc {
+#business-plan .row .col.mg-calc {
     margin: 0 calc(10% / 2);
 }
 .billing-title {
@@ -227,7 +219,6 @@ a:visited svg {
     display: inline-block;
     margin: 0;
 }
-
 .radio-blue,
 .radio-white {
     position: relative;
@@ -236,7 +227,7 @@ a:visited svg {
     border-radius: 10px;
 }
 .radio-blue{
-    background-color: var(--blue-color);
+    background-color: var(--button-color);
 }
 
 .radio-white-small {
@@ -249,6 +240,20 @@ a:visited svg {
     border-radius: 10px;
     width: 0.5em;
     background-color: white;
+}
+
+.plane-col header {
+    text-align: center;
+    line-height: 3em;
+}
+
+.plane-col svg {
+    height: 1em;
+    vertical-align: middle;
+}
+.plane-for {
+    /* font-size: 1.2em; */
+    vertical-align: middle;
 }
 /* /main */
 /* footer */
