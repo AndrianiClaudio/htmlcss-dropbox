@@ -48,38 +48,10 @@ a:visited {
 .width-30 {
     width: 30%;
 }
+.width-10 {
+    width: 10%;
+}
 /* /width */
-/* button */
-[class^="btn-"]:hover {
-    cursor: pointer;
-}
-.btn-blue {
-    background-color: var(--blue-color);
-    color: white;
-}
-.btn-blue:visited {
-    color: white;
-}
-.btn-short {
-    padding: 0.3em 1em;
-}
-.btn-medium {
-    padding: 0.3em 2.25em;
-}
-.btn-long {
-    padding: 0.3em 3.5em;
-}
-/* button */
-
-/* link acquista ora */
-.buy-now {
-    color: var(--blue-color);
-    text-decoration: underline;
-}
-.buy-now:visited {
-    color: var(--blue-color);
-}
-/* link acquista ora */
 
 /* /border */
 .brd-1 {
@@ -138,6 +110,37 @@ a:visited {
     float:right;
 }
 /* /float */
+/* button */
+[class^="btn-"]:hover {
+    cursor: pointer;
+}
+.btn-blue {
+    background-color: var(--blue-color);
+    color: white;
+}
+.btn-blue:visited {
+    color: white;
+}
+.btn-short {
+    padding: 0.3em 1em;
+}
+.btn-medium {
+    padding: 0.3em 2.25em;
+}
+.btn-long {
+    padding: 0.3em 3.5em;
+}
+/* button */
+
+/* link acquista ora */
+.buy-now {
+    color: var(--blue-color);
+    text-decoration: underline;
+}
+.buy-now:visited {
+    color: var(--blue-color);
+}
+/* link acquista ora */
 
 /* navbar-fixed */
 .fixed-bar {
@@ -165,26 +168,48 @@ nav > a {
 /* /navbar-fixed */
 
 /* jumbotron */
-.jumbotron-container {
+.jumbo-container {
     background-color: var(--light-blue-color);
     height: 100%;
     overflow: visible;
 }
 
 .jumbo-title {
-    font-size: 4.5em;
+    font-size: 4.3em;
 }
-.jumbo-paragraph,
-.jumbo-cancel-msg {
+.jumbo-paragraph {
     font-size: 0.9em;
 }
 .jumbo-cancel-msg {
     display: block;
+    font-size: 0.83em;
 }
-/* /jumbotron */
-svg {
-    width: 10%;
-}
+
 a:visited svg {
     color: black;
+}
+/* /jumbotron */
+
+/* main */
+.main-container .row .col.width-30 {
+    height: 350px;
+    background-color: red;
+}
+.main-container .row > .row {
+    height: 100px;
+    background-color: blue;
+}
+/* /main */
+/* footer */
+/* /footer */
+
+.main-container .row .col.mg-calc {
+    margin: 0 calc(10% / 2);
+}
+
+.row {
+    width:100%;
+}
+.mg-t-12 {
+    margin-top: 12em;
 }
