@@ -32,30 +32,13 @@ a:visited {
     display: table;
     clear: left; /*img ha float dx*/
 }
-/* width */
-.width-100 {
-    width: 100%;
-}
-.width-80 {
-    width: 80%;
-}
-.width-70 {
-    width: 70%;
-}
-.width-65 {
-    width: 65%;
-}
-.width-30 {
-    width: 30%;
-}
-.width-10 {
-    width: 10%;
-}
-/* /width */
 
 /* /border */
 .brd-1 {
     border: 1px solid black;
+}
+.brd-1-light {
+    border: 1px solid lightgrey;
 }
 /* /border */
 
@@ -66,8 +49,14 @@ a:visited {
 .mg-t-5 {
     margin-top: 5em;
 }
+.mg-t-12 {
+    margin-top: 12em;
+}
 .mg-r-1 {
     margin-right:1em;
+}
+.mg-r-2 {
+    margin-right: 2em;
 }
 .mg-l-1 {
     margin-left: 1em;
@@ -77,6 +66,9 @@ a:visited {
 }
 .mg-b-1 {
     margin-bottom: 1em;
+}
+.mg-b-1dot5 {
+    margin-bottom: 1.5em;
 }
 .mg-b-2 {
     margin-bottom: 2em;
@@ -109,7 +101,27 @@ a:visited {
 .float-r {
     float:right;
 }
+.row {
+    width:100%;
+}
 /* /float */
+/* width */
+.width-100 {
+    width: 100%;
+}
+.width-80 {
+    width: 80%;
+}
+.width-65 {
+    width: 65%;
+}
+.width-30 {
+    width: 30%;
+}
+.width-10 {
+    width: 10%;
+}
+/* /width */
 /* button */
 [class^="btn-"]:hover {
     cursor: pointer;
@@ -191,25 +203,53 @@ a:visited svg {
 /* /jumbotron */
 
 /* main */
-.main-container .row .col.width-30 {
+.billing-container .row .col.width-30 {
     height: 350px;
     background-color: red;
 }
-.main-container .row > .row {
+.billing-container .row > .row {
     height: 100px;
     background-color: blue;
+}
+.billing-container .row .col.mg-calc {
+    margin: 0 calc(10% / 2);
+}
+.billing-title {
+    display: block;
+    font-size: 2.5em;
+}
+
+.container-check,
+.container-nocheck,
+.container-check > div,
+.container-nocheck > div{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+}
+
+.radio-blue,
+.radio-white {
+    position: relative;
+    height: 1em;
+    width: 1em;
+    border-radius: 10px;
+}
+.radio-blue{
+    background-color: var(--blue-color);
+}
+
+.radio-white-small {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%,-50%);
+    height: 0.5em;
+    border-radius: 10px;
+    width: 0.5em;
+    background-color: white;
 }
 /* /main */
 /* footer */
 /* /footer */
-
-.main-container .row .col.mg-calc {
-    margin: 0 calc(10% / 2);
-}
-
-.row {
-    width:100%;
-}
-.mg-t-12 {
-    margin-top: 12em;
-}
