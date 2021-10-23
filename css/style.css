@@ -38,6 +38,18 @@ a:visited {
 .brd-1 {
     border: 1px solid var(--border-color);
 }
+.brd-1-t {
+    border-top: 1px solid var(--border-color);
+}
+.brd-1-b {
+    border-bottom: 1px solid var(--border-color);
+}
+.brd-1-l {
+    border-left: 1px solid var(--border-color);
+}
+.brd-1-r {
+    border-right: 1px solid var(--border-color);
+}
 /* /border */
 
 /* margin */
@@ -85,11 +97,17 @@ a:visited {
 .pd-l-1 {
     padding-left: 1em;
 }
+.pd-t-1 {
+    padding-top: 1em;
+}
 .pd-t-6 {
     padding-top: 6em;
 }
 .pd-b-7 {
     padding-bottom: 7em;
+}
+.pd-t-2 {
+    padding-top: 2em;
 }
 /* /padding */
 /* float */
@@ -242,7 +260,8 @@ a:visited svg {
     background-color: white;
 }
 
-.plane-col header {
+.plane-col > header {
+    display: block;
     text-align: center;
     line-height: 3em;
 }
@@ -253,6 +272,29 @@ a:visited svg {
 }
 .plane-for {
     /* font-size: 1.2em; */
+    vertical-align: middle;
+}
+.plane-col main header
+{
+    line-height: 2em;
+}
+.plane-name > h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.plane-price > span{
+    font-weight: bold;
+}
+.plane-price-period span{
+    color: darkgrey;
+}
+.plane-price-period span,
+.plane-detail *{
+    font-size: 0.89em;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+.plane-user-num,
+.plane-user-tb {
     vertical-align: middle;
 }
 /* /main */
