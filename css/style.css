@@ -1,6 +1,6 @@
 /* variabili colore */
 :root {
-    --button-color: #297afe;
+    --button-color: #0061ff;
     --border-color: lightgrey;
     --jumbo-color: #b4d0e7;
 }
@@ -23,6 +23,9 @@ a:visited {
     color: black;
 }
 
+a:hover {
+    cursor: pointer;
+}
 .clearfix::after {
     content: '';
     display: table;
@@ -125,6 +128,9 @@ a:visited {
 .width-100 {
     width: 100%;
 }
+.width-85 {
+    width: 85%;
+}
 .width-80 {
     width: 80%;
 }
@@ -139,22 +145,26 @@ a:visited {
 }
 /* /width */
 /* button */
-[class^="btn-"]:hover {
-    cursor: pointer;
-}
 .btn-blue {
+    text-align: center;
     background-color: var(--button-color);
     color: white;
+    font-size: 1em;
 }
 .btn-blue:visited {
     color: white;
 }
+.pd-t-dot3,
+.pd-b-dot3 {
+    padding-top:0.3em;
+    padding-bottom: 0.3em;
+}
 .btn-short {
     padding: 0.3em 1em;
 }
-.btn-medium {
+/* .btn-medium {
     padding: 0.3em 2.25em;
-}
+} */
 .btn-long {
     padding: 0.3em 3.5em;
 }
@@ -285,17 +295,23 @@ a:visited svg {
 .plane-price > span{
     font-weight: bold;
 }
-.plane-price-period span{
+.plane-price-period span {
     color: darkgrey;
+    font-size: 0.85em;
 }
-.plane-price-period span,
-.plane-detail *{
-    font-size: 0.89em;
-    /* font-family: 'Open Sans Condensed', sans-serif; */
+
+.plane-detail * {
+    font-size: 0.92em;
 }
-.plane-user-num,
-.plane-user-tb {
+.plane-user-num span,
+.plane-user-tb span,
+.plane-user-functionality span {
     vertical-align: middle;
+}
+.plane-try-free .btn-blue {
+    display: inline-block;
+    font-size: 1em;
+    width: 100%;
 }
 /* /main */
 /* footer */
