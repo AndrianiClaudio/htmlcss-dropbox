@@ -67,6 +67,12 @@ a:hover {
 .mg-t-1 {
     margin-top: 1em;
 }
+.mg-t-2 {
+    margin-top: 2em;
+}
+.mg-t-3 {
+    margin-top: 3em;
+}
 .mg-t-5 {
     margin-top: 5em;
 }
@@ -186,13 +192,17 @@ a:hover {
     padding-top: 0.3em;
     padding-bottom: 0.3em;
 }
+.btn-blue:hover {
+    color: white;
+    background-color: var(--button-color);
+}
 .btn-blue:visited {
     color: white;
 }
 
 .btn-short {
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
 }
 .btn-medium {
     padding-right: 2.25em;
@@ -261,7 +271,7 @@ header .logo {
 /* /jumbotron */
 
 /* main */
-#business-plan .row .col.mg-calc {
+.business-plan .row .col.mg-calc {
     margin: 0 calc(10% / 2);
 }
 .plan-title {
@@ -334,7 +344,7 @@ header .logo {
 .plan-user-functionality span {
     vertical-align: middle;
 }
-.plan-try-free .btn-blue {
+.btn-blue {
     display: inline-block;
     width: 100%;
     line-height: 1.8em;
@@ -395,14 +405,16 @@ header .logo {
 .radio-billing-mode {
     line-height: 6em;
 }
-.plan-limit{
+.plan-limit span,
+.plan-buy-try .btn-blue,
+.plan-highlight li{
     font-size: 0.9em;
 }
-
-.plan-limit li .clearfix .float-l i {
-    vertical-align: middle;
+.buy-now { 
+    color: var(--button-color);
+    text-decoration: underline;
 }
 
-.plan-limit li .clearfix .float-r span {
-    vertical-align: middle;
+.plan-highlight i {
+    color: var(--button-color);
 }
