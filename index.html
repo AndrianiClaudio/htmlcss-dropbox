@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +11,12 @@
     <!-- link to open sans font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&display=swap" rel="stylesheet">
     <!-- /link to open sans font -->
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- /fontawesome -->
 </head>
-
 <body class="mg-t-5">
     <!-- header section -->
     <header>
@@ -30,13 +26,13 @@
                 <!-- logo -->
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/logo-small.png" alt="Logo di Dropbox" id="logo" class="align-mid pd-r-1">
+                        <img src="img/logo-small.png" alt="Logo di Dropbox" id="logo" class="pd-r-1">
                     </a>
                 </div>
                 <!-- /logo -->
                 <!-- navbar-left: inline-list -->
                 <nav class="mg-l-1">
-                    <ul class="height-5 inline-list">
+                    <ul class="height-5">
                         <!-- perché dropbox? -->
                         <li class="inline-item  pd-r-1">
                             <a href="#">Perch&egrave; Dropbox?</a>
@@ -59,9 +55,9 @@
             <div class="float-r">
                 <!-- /navbar-right -->
                 <nav>
-                    <ul class="height-5 inline-list">
+                    <ul class="height-5">
                         <!-- supporto -->
-                        <li class="inline-item  ">
+                        <li class="inline-item ">
                             <a href="#">Supporto</a>
                         </li>
                         <!-- /supporto -->
@@ -76,7 +72,7 @@
                         </li>
                         <!-- /Accedi -->
                         <!-- Inizia-blue -->
-                        <li class="inline-item  mg-r-1 pd-l-1">
+                        <li class="inline-item mg-r-1 pd-l-1">
                             <a class="btn-blue btn-short">inizia</a>
                         </li>
                         <!-- /Inizia-blue -->
@@ -134,217 +130,475 @@
     <!-- /header section -->
     <!-- main section -->
     <main class="width-100">
-        <div class="container width-65 mg-t-12">
-            <!-- section business-plan -->
-            <section class="business-plan">
-                <!-- business-plan title -->
-                <div class="title mg-b-1">
-                    <h2>Trova il piano Dropbox Business che fa per te</h2>
-                </div>
-                <!-- /business-plan title -->
+        <!-- section col business-plan -->
+        <div class="width-65 mg-t-12">
+            <section id="business-plan" class=" mg-b-3">
+                <h2 class="title mg-b-1">Trova il piano Dropbox Business che fa per te</h2>
                 <!-- radio button scelta fatturazione -->
-                <div class="radio-billing-mode">                    
-                    <div class="container-check">
-                        <div class="radio-blue" id="monthly-billing">
+                <div class="radio-billing-mode">  
+                    <div class="container-check">    
+                        <div class="radio-blue">
                             <div class="radio-white-small">
                             </div>
                         </div>
                         <span>Fatturazione mensile</span>
                     </div>
                     <div class="container-nocheck pd-l-1">
-                        <div class="radio-white brd-1" id="yearly-billing">
+                        <div class="radio-white brd-1">
                         </div>
                         <span>Fatturazione annuale</span>
                     </div>
                 </div>
                 <!-- /radio button scelta fatturazione -->
-
-                <!-- <div class="clearfix"> -->
-                    <!-- colonna professional -->
-                    <section id="professional-plan" class="plan-section float-l width-30 brd-1" >
-                        <div class="width-85">
-                            <!-- header -->
-                            <header class="brd-b-1 mg-b-1">
-                                <div class="plan-for">
-                                    <i class="far fa-user"></i>
-                                    <span>Singolo</span>
-                                </div>
-                            </header>
-                            <!-- /he``ader -->
-
-                            <!-- dettagli del piano -->
-                            <div class="plan-detail mg-b-2">
-                                <div class="plan-name">
+                <!-- colonna PROFESSIONAL -->
+                <section id="professional-plan" class="float-l width-30 brd-1 pd-b-6" >
+                    <!-- header -->
+                    <header>
+                        <div class="plan-header brd-b-1">
+                            <i class="far fa-user"></i>
+                            <span>Singolo</span>
+                        </div>
+                    </header>
+                    <!-- /header -->
+                    <div class="width-85">
+                        <!-- dettagli del piano -->
+                        <div class="mg-t-2 mg-b-3">
+                            <div class="plan-name">
                                 <h3>Professional</h3>
-                                </div>
-                                <div class="plan-price">
-                                    <span>19&comma;99&euro;</span>
-                                </div>
-                                <div class="plan-payment-frequency">
-                                    <span>/mese</span>
-                                </div>
                             </div>
-                            <!-- /dettagli del piano -->
-
-                            <!-- elenco limiti del piano -->
-                            <section class="plan-limit">
-                                <ul>
-                                    <li class="plane-user-num mg-b-2">
-                                        <div class="clearfix">
-                                            <div class="float-l pd-r-dot5">
-                                                <i class=" far fa-user"></i>
-                                            </div>
-                                            <div class="float-r width-90">
-                                                <span>1 utente</span>
-                                            </div>            
+                            <div class="plan-price">
+                                <span>19&comma;99 &euro;</span>
+                            </div>
+                            <div class="plan-payment-frequency">
+                                <span>/mese</span>
+                            </div>
+                        </div>
+                        <!-- /dettagli del piano -->
+                        <!-- limiti del piano -->
+                        <div class="plan-limit">
+                            <ul>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class=" far fa-user"></i>
                                         </div>
-                                    </li>
-                                    <li class="plan-user-byte mg-b-2">
-                                        <div class="clearfix">
-                                            <div class="float-l pd-r-dot5">
-                                                <i class="far fa-folder"></i>
-                                            </div>              
-                                            <div class="float-r width-90">
-                                                <span>3 TB di spazio di archiviazione sicura</span>
-                                            </div>  
+                                        <div class="float-r width-90">
+                                            <span>1 utente</span>
+                                        </div>            
+                                    </div>
+                                </li>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="far fa-folder"></i>
+                                        </div>              
+                                        <div class="float-r width-90">
+                                            <span>3 TB di spazio di archiviazione sicura</span>
+                                        </div>  
+                                    </div>
+                                </li>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class=" float-l pd-r-dot5">
+                                            <i class="fas fa-pencil-alt"></i>
                                         </div>
-                                    </li>
-                                    <li class="plan-user-function mg-b-2">
-                                        <div class="clearfix">
-                                            <div class=" float-l pd-r-dot5">
-                                                <i class="fas fa-pen"></i>
-                                            </div>
-                                            <div class="float-r width-90">
-                                                <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
-                                            </div>
+                                        <div class="float-r width-90">
+                                            <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                                         </div>
-                                    </li>
-                                </ul>
-                            </section>
-                            <!-- /limiti del piano -->
-                            
-                            <!-- try for free -->
-                            <section class="plan-buy-try">
-                                <div class=" mg-t-3 mg-b-3">
-                                    <a class="btn-blue" href="#">Prova gratis per 30 giorni</a>
-                                </div>
-                                <div>
-                                    <span>oppure <a href="#" class="buy-now">acquista ora</a></span>
-                                </div>
-                            </section>
-                            <!-- /try for free -->
-                            <!-- hr mini -->
-                            <hr class="mini-hr mg-b-3">
-                            <!-- /hr mini -->
-                            <!-- punti salienti del piano -->
-                            <section class="plan-highlight">
-                                <h4>Punti salienti del piano</h4>
-                                <ul class="plan-highlight mg-t-2">
-                                    <!-- Invia file fino a 100 GB con Dropbox Transfert -->
-                                    <li class="user-max-upload mg-b-2">
-                                        <div class="clearfix">
-                                            <div class="float-l pd-r-dot5">
-                                                <i class="fa fa-check"></i>
-                                            </div>
-                                            <div class="float-l width-90">
-                                                <span>Invia file fino a 100 GB con Dropbox Transfert</span>
-                                            </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /limiti del piano -->
+                        <!-- try for free -->
+                        <div class="plan-buy-try">
+                            <div class=" mg-t-3 mg-b-3">
+                                <a class="btn-blue width-100" href="#">Prova gratis per 30 giorni</a>
+                            </div>
+                            <div>
+                                <span>oppure <a href="#" class="buy-now">acquista ora</a></span>
+                            </div>
+                        </div>
+                        <!-- /try for free -->
+                        <!-- hr mini -->
+                        <hr class="mini-hr mg-t-2 mg-b-2">
+                        <!-- /hr mini -->
+                        <!-- plan highlights -->
+                        <section class="plan-highlight">
+                            <h4>Punti salienti del piano</h4>
+                            <ul class="mg-t-2">
+                                <!-- Invia file fino a 100 GB con Dropbox Transfert -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
                                         </div>
-                                    </li>
-                                    <!-- /Invia file fino a 100 GB con Dropbox Transfert -->
-
-                                    <!-- Cartelle offline su dispositivi mobili -->
-                                    <li class="user-folder-off  mg-b-2">
-                                        <div class="clearfix">
-                                            <div class="float-l pd-r-dot5">
-                                                <i class="fa fa-check"></i>
-                                            </div>
-                                            <div class="float-l width-90">
-                                                <span>Cartelle offline su dispositivi mobili</span>
-                                            </div>
+                                        <div class="float-l width-90">
+                                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
                                         </div>
-                                    </li>
-                                    <!-- /Cartelle offline su dispositivi mobili -->
-                                    <!-- pulizia remota dell'account -->
-                                    <li class="user-remote-clean  mg-b-2">
-                                        <div class="clearfix">
-                                            <div class="float-l pd-r-dot5">
-                                                <i class="fa fa-check"></i>
-                                            </div>
-                                            <div class="float-l width-90">
-                                                <span>Pulizia remota dell&apos;account</span>
-                                            </div>
+                                    </div>
+                                </li>
+                                <!-- /Invia file fino a 100 GB con Dropbox Transfert -->
+                                <!-- Cartelle offline su dispositivi mobili -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
                                         </div>
-                                    </li>
-                                    <!-- /pulizia remota dell'account -->
-                                    <!-- Filigrana documento -->
-                                    <li class="user-document-style  mg-b-2">
-                                        <div class="clearfix">
-                                            <div class="float-l pd-r-dot5">
-                                                <i class="fa fa-check"></i>
-                                            </div>
-                                            <div class="float-l width-90">
-                                                <span>Filigrana documento</span>
-                                            </div>
+                                        <div class="float-l width-90">
+                                            <span>Cartelle offline su dispositivi mobili</span>
                                         </div>
-                                    </li>
-                                    <!-- /Filigrana documento -->
-                                    <!-- Assistenza prioritaria via email e chat -->
-                                    <li class="user-sms-mail-assistance  mg-b-2">
-                                        <div class="clearfix">
-                                            <div class="float-l pd-r-dot5">
-                                                <i class="fa fa-check"></i>
-                                            </div>
-                                            <div class="float-l width-90">
-                                                <span>Assistenza prioritaria via email e chat</span>
-                                            </div>
+                                    </div>
+                                </li>
+                                <!-- /Cartelle offline su dispositivi mobili -->
+                                <!-- pulizia remota dell'account -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
                                         </div>
-                                    </li>
-                                    <!-- /Assistenza prioritaria via email e chat -->
-                                </ul>
-                            </section>
-                            <!-- /punti salienti del piano -->
-
-                    </section>
-                    <!-- /colonna professional -->
-                    <!-- colonna standard -->
-                    <!-- <section class="float-l width-30 mg-calc">
-                        
-                    </section> -->
-                    <!-- /colonna standard -->
-                    <!-- colonna advanced -->
-                    <!-- <section class="float-l width-30">
-                        
-                    </section> -->
-                    <!-- /colonna advanced -->
-                </div>
-                <!-- riga enterprise -->
-                <div class="width-100">
-
-                </div>
-                <!-- riga enterprise -->
-            </section>
-            <!-- /section business-plan -->
-
-            <!-- section partner-find -->
-            <!-- <section id="partner-find">
-
-            </section> -->
-            <!-- /section partner-find -->
-
-            <!-- section operations -->
-            <!-- <section id="operations">
-                
-            </section> -->
-            <!-- /section operations -->
+                                        <div class="float-l width-90">
+                                            <span>Pulizia remota dell&apos;account</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /pulizia remota dell'account -->
+                                <!-- Filigrana documento -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Filigrana documento</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Filigrana documento -->
+                                <!-- Assistenza prioritaria via email e chat -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Assistenza prioritaria via email e chat</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Assistenza prioritaria via email e chat -->
+                            </ul>
+                        </section>
+                        <!-- /plan highlights -->
+                    </div>
+                </section>
+                <!-- /colonna PROFESSIONAL -->
+                <!-- colonna STANDARD -->
+                <section id="standard-plan" class="float-l width-30 mg-calc brd-1 pd-b-6">
+                <!-- header -->
+                    <header>
+                        <div class="plan-header brd-b-1">
+                            <i class="far fa-user"></i>
+                            <span>Singolo</span>
+                        </div>
+                    </header>
+                    <!-- /header -->
+                    <div class="width-85">
+                        <!-- dettagli del piano -->
+                        <div class="mg-t-2 mg-b-3">
+                            <div class="plan-name">
+                                <h3>PROFESSIONAL</h3>
+                            </div>
+                            <div class="plan-price">
+                                <span>19&comma;99 &euro;</span>
+                            </div>
+                            <div class="plan-payment-frequency">
+                                <span>/mese</span>
+                            </div>
+                        </div>
+                        <!-- /dettagli del piano -->
+                        <!-- limiti del piano -->
+                        <div class="plan-limit">
+                            <ul>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class=" far fa-user"></i>
+                                        </div>
+                                        <div class="float-r width-90">
+                                            <span>1 utente</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="far fa-folder"></i>
+                                        </div>
+                                        <div class="float-r width-90">
+                                            <span>3 TB di spazio di archiviazione sicura</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class=" float-l pd-r-dot5">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </div>
+                                        <div class="float-r width-90">
+                                            <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /limiti del piano -->
+                        <!-- try for free -->
+                        <div class="plan-buy-try">
+                            <div class=" mg-t-3 mg-b-3">
+                                <a class="btn-blue width-100" href="#">Prova gratis per 30 giorni</a>
+                            </div>
+                            <div>
+                                <span>oppure <a href="#" class="buy-now">acquista ora</a></span>
+                            </div>
+                        </div>
+                        <!-- /try for free -->
+                        <!-- hr mini -->
+                        <hr class="mini-hr mg-t-2 mg-b-2">
+                        <!-- /hr mini -->
+                        <!-- plan-highlits -->
+                        <section class="plan-highlight">
+                            <h4>Punti salienti del piano</h4>
+                            <ul class="mg-t-2">
+                                <!-- Invia file fino a 100 GB con Dropbox Transfert -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Invia file fino a 100 GB con Dropbox Transfert -->
+                                <!-- Cartelle offline su dispositivi mobili -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Cartelle offline su dispositivi mobili</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Cartelle offline su dispositivi mobili -->
+                                <!-- pulizia remota dell'account -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Pulizia remota dell&apos;account</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /pulizia remota dell'account -->
+                                <!-- Filigrana documento -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Filigrana documento</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Filigrana documento -->
+                                <!-- Assistenza prioritaria via email e chat -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Assistenza prioritaria via email e chat</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Assistenza prioritaria via email e chat -->
+                            </ul>
+                        </section>
+                        <!-- /plan-highlits -->
+                    </div>
+                </section>
+                <!-- /colonna STANDARD -->
+                <!-- colonna ADVANCED -->
+                <section id="advanced-plan" class="float-l width-30 brd-1 pd-b-6">
+                    <!-- header -->
+                    <header>
+                        <div class="plan-header brd-b-1">
+                            <i class="far fa-user"></i>
+                            <span>Singolo</span>
+                        </div>
+                    </header>
+                    <!-- /header -->
+                    <div class="width-85">
+                        <!-- dettagli del piano -->
+                        <div class="mg-t-2 mg-b-3">
+                            <div class="plan-name">
+                                <h3>PROFESSIONAL</h3>
+                            </div>
+                            <div class="plan-price">
+                                <span>19&comma;99 &euro;</span>
+                            </div>
+                            <div class="plan-payment-frequency">
+                                <span>/mese</span>
+                            </div>
+                        </div>
+                        <!-- /dettagli del piano -->
+                        <!-- limiti del piano -->
+                        <div class="plan-limit">
+                            <ul>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class=" far fa-user"></i>
+                                        </div>
+                                        <div class="float-r width-90">
+                                            <span>1 utente</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="far fa-folder"></i>
+                                        </div>
+                                        <div class="float-r width-90">
+                                            <span>3 TB di spazio di archiviazione sicura</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class=" float-l pd-r-dot5">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </div>
+                                        <div class="float-r width-90">
+                                            <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /limiti del piano -->
+                        <!-- try for free -->
+                        <div class="plan-buy-try">
+                            <div class=" mg-t-3 mg-b-3">
+                                <a class="btn-blue width-100" href="#">Prova gratis per 30 giorni</a>
+                            </div>
+                            <div>
+                                <span>oppure <a href="#" class="buy-now">acquista ora</a></span>
+                            </div>
+                        </div>
+                        <!-- /try for free -->
+                        <!-- hr mini -->
+                        <hr class="mini-hr mg-t-2 mg-b-2">
+                        <!-- /hr mini -->
+                        <!-- plan-highlits -->
+                        <section class="plan-highlight">
+                            <h4>Punti salienti del piano</h4>
+                            <ul class="mg-t-2">
+                                <!-- Invia file fino a 100 GB con Dropbox Transfert -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Invia file fino a 100 GB con Dropbox Transfert -->
+                                <!-- Cartelle offline su dispositivi mobili -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Cartelle offline su dispositivi mobili</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Cartelle offline su dispositivi mobili -->
+                                <!-- pulizia remota dell'account -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Pulizia remota dell&apos;account</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /pulizia remota dell'account -->
+                                <!-- Filigrana documento -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Filigrana documento</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Filigrana documento -->
+                                <!-- Assistenza prioritaria via email e chat -->
+                                <li class="mg-b-2">
+                                    <div class="clearfix">
+                                        <div class="float-l pd-r-dot5">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="float-l width-90">
+                                            <span>Assistenza prioritaria via email e chat</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /Assistenza prioritaria via email e chat -->
+                            </ul>
+                        </section>
+                        <!-- /plan-highlits-->
+                    </div>
+                </section>
+                <!-- /colonna ADVANCED -->
+            </section>  
         </div>
+        <!-- /section col business-plan -->
+        <!-- riga enterprise -->
+        <!-- <div class="width-100">
+        </div> -->
+        <!-- riga enterprise -->
+        <!-- section partner-find -->
+        <!-- <section id="partner-find">
+        </section> -->
+        <!-- /section partner-find -->
+        <!-- section operations -->
+        <!-- <section id="operations">
+        </section> -->
+        <!-- /section operations -->
     </main>
     <!-- /main section -->
-    
     <!-- footer section -->
     <footer>
     </footer>
     <!-- /footer section -->
 </body>
-
 </html>
