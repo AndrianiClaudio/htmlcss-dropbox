@@ -23,8 +23,11 @@ ul {
 a {
     text-decoration: none;
 }
-a:visited {
-    color: black;
+a:visited,
+a:link,
+a:active,
+a:hover {
+    color: inherit;
 }
 
 a:hover {
@@ -35,7 +38,7 @@ a:hover {
     display: table;
     clear: both;
 }
-.clearfix-noimg::after {
+.clearfix-left::after {
     content: '';
     display: table;
     clear: left; /*img ha float dx*/
@@ -98,11 +101,17 @@ a:hover {
 .pd-r-1 {
     padding-right: 1em;
 }
+.pd-r-3 {
+    padding-right: 3em;
+}
 .pd-r-4 {
     padding-right: 4em;
 }
 .pd-l-1 {
     padding-left: 1em;
+}
+.pd-r-2 {
+    padding-right: 2em;
 }
 .pd-t-1 {
     padding-top: 1em;
@@ -110,8 +119,8 @@ a:hover {
 .pd-t-6 {
     padding-top: 6em;
 }
-.pd-b-7 {
-    padding-bottom: 7em;
+.pd-b-6 {
+    padding-bottom: 6em;
 }
 .pd-t-2 {
     padding-top: 2em;
@@ -147,6 +156,9 @@ a:hover {
 .width-65 {
     width: 65%;
 }
+.width-35 {
+    width: 35%;
+}
 .width-30 {
     width: 30%;
 }
@@ -156,8 +168,11 @@ a:hover {
 .width-5 {
     width: 5%;
 }
-.plane-detail .clearfix > div {
+.plan-detail .clearfix > div {
     display: inline-block;
+}
+.height-5 {
+    height: 5em;
 }
 /* /width */
 /* button */
@@ -166,23 +181,24 @@ a:hover {
     background-color: var(--button-color);
     color: white;
     font-size: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 .btn-blue:visited {
     color: white;
 }
-.pd-t-dot3,
-.pd-b-dot3 {
-    padding-top:0.3em;
-    padding-bottom: 0.3em;
-}
+
 .btn-short {
-    padding: 0.3em 1em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 .btn-medium {
-    padding: 0.3em 2.25em;
+    padding-right: 2.25em;
+    padding-left: 2.25em;
 }
 .btn-long {
-    padding: 0.3em 3.5em;
+    padding-right: 3.5em;
+    padding-left: 3.5em;
 }
 /* button */
 
@@ -198,51 +214,47 @@ a:hover {
 
 /* navbar-fixed */
 .fixed-bar {
+    display: inline-block;
     background-color: white;
     position: fixed;
-    height: 5em;
     line-height: 5em;
+    vertical-align: baseline;
     top:0;
     left:0;
     z-index: 10;
-    /* overflow-y: visible;
-    overflow-x: scroll; */
 }
-
-.fixed-bar .container,
 .fixed-bar nav,
 header .logo {
     display: inline-block;
 }
+
 #logo,
-nav > a {
-    line-height: 5em;
+.inline-item,
+.inline-nav {
     vertical-align: middle;
+}
+.inline-item {
+    display: inline-block;
 }
 /* /navbar-fixed */
 
 /* jumbotron */
 .jumbo-container {
     background-color: var(--jumbo-color);
-    height: 100%;
 }
 
-.jumbo-title {
+.jumbo-title > h1{
     font-size: 4.3em;
 }
-.jumbo-paragraph {
-    font-size: 0.9em;
+.jumbo-paragraph > p,
+.jumbo-container .clearfix-left .width-35 {
+    font-size: 0.97em;
 }
-.jumbo-cancel-msg {
-    display: block;
-    font-size: 0.83em;
+.jumbo-container .clearfix-left .width-35 .jumbo-cancel-msg {
+    font-size: 0.92em;
 }
-
-a:visited svg {
-    color: black;
-}
-.arrow-down svg {
-    vertical-align: top;
+.jumbo-container .clearfix-left .width-10 > a {
+    font-size: 2.5em;
 }
 /* /jumbotron */
 
@@ -250,7 +262,7 @@ a:visited svg {
 #business-plan .row .col.mg-calc {
     margin: 0 calc(10% / 2);
 }
-.billing-title {
+.plan-title {
     display: block;
     font-size: 2.5em;
 }
@@ -286,41 +298,41 @@ a:visited svg {
     background-color: white;
 }
 
-.plane-col > header {
+.plan-col > header {
     display: block;
     text-align: center;
     line-height: 3em;
 }
 
-.plane-col svg {
+.plan-col svg {
     height: 0.9em;
     vertical-align: middle;
 }
-.plane-for {
+.plan-for {
     /* font-size: 1.2em; */
     vertical-align: middle;
 }
-.plane-name > h3 {
+.plan-name > h3 {
     font-size: 1.5em;
     font-weight: 800;
 }
-.plane-price > span{
+.plan-price > span{
     font-weight: bold;
 }
-.plane-price-period span {
+.plan-price-period span {
     color: var(--border-color);
     font-size: 0.85em;
 }
 
-.plane-col main {
+.plan-col main {
     font-size: 0.92em;
 }
-.plane-user-num span,
-.plane-user-tb span,
-.plane-user-functionality span {
+.plan-user-num span,
+.plan-user-tb span,
+.plan-user-functionality span {
     vertical-align: middle;
 }
-.plane-try-free .btn-blue {
+.plan-try-free .btn-blue {
     display: inline-block;
     width: 100%;
     line-height: 1.8em;
@@ -336,4 +348,39 @@ a:visited svg {
 
 .svg-inline--fa.fa-check.fa-w-16 {
     fill: var(--button-color);
+}
+
+
+.radio-billing-mode > div {
+    line-height: 2em;
+    /* vertical-align: middle; */
+}
+
+.radio-billing-mode > div label {
+    vertical-align: middle;
+}
+.mg-calc {
+    margin-left: calc(10% / 2);
+    margin-right: calc(10% / 2);
+}
+
+.plan-single-team {
+    line-height: 4em;
+}
+.far.fa-user,
+.plan-single-team > span {
+    vertical-align: middle;
+}
+
+.plan-single-team {
+    /* line-height: 3em; */
+}
+.plan-detail {
+    /* line-height: 2em; */
+}
+.plan-price {
+    /* line-height: 2em; */
+}
+.plan-paymment-frequency {
+    /* line-height: 1.5em; */
 }
