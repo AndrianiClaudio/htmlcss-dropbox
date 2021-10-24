@@ -1,7 +1,7 @@
 /* variabili colore */
 :root {
     --button-color: #0061ff;
-    --border-color: darkgrey;
+    --border-color: lightgrey;
     --jumbo-color: #b4d0e7;
 }
 /* variabili colore*/
@@ -48,16 +48,17 @@ a:hover {
 .brd-1 {
     border: 1px solid var(--border-color);
 }
-.brd-1-t {
+.brd-b-1
+.brd-t-1 {
     border-top: 1px solid var(--border-color);
 }
-.brd-1-b {
+.brd-b-1 {
     border-bottom: 1px solid var(--border-color);
 }
-.brd-1-l {
+.brd-l-1 {
     border-left: 1px solid var(--border-color);
 }
-.brd-1-r {
+.brd-r-1 {
     border-right: 1px solid var(--border-color);
 }
 /* /border */
@@ -140,6 +141,7 @@ a:hover {
 /* width */
 .width-100 {
     width: 100%;
+    
 }
 .width-95 {
     width: 95%;
@@ -372,15 +374,35 @@ header .logo {
     vertical-align: middle;
 }
 
-.plan-single-team {
-    /* line-height: 3em; */
+.plan-for{
+    line-height: 3em;
+    text-align: center;
 }
-.plan-detail {
-    /* line-height: 2em; */
+.plan-name {
+    line-height: 3em;
 }
 .plan-price {
-    /* line-height: 2em; */
+    line-height: 2em;
 }
-.plan-paymment-frequency {
-    /* line-height: 1.5em; */
+.plan-payment-frequency {
+    line-height: 1.5em;
+    color: darkgray;
+}
+
+.pd-r-dot5 {
+    padding-right: 0.5em;
+}
+.radio-billing-mode {
+    line-height: 6em;
+}
+.plan-limit{
+    font-size: 0.9em;
+}
+
+.plan-limit li .clearfix .float-l i {
+    vertical-align: middle;
+}
+
+.plan-limit li .clearfix .float-r span {
+    vertical-align: middle;
 }
