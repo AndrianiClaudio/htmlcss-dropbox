@@ -97,6 +97,9 @@ a:hover {
 .width-85 {
     width: 85%;
 }
+/* .width-50 {
+    width: 50%;
+} */
 .width-65 {
     width: 65%;
 }
@@ -349,4 +352,21 @@ h2.title {
 .plan-span {
     height:3em;
     background-color: red;
+}
+
+
+#partner-find {
+    background-color: aliceblue;
+}
+
+.partner-title {
+    height: 3em;
+    background-color: darkgoldenrod;
+}
+.partner-paragraph {
+    height: 3em;
+    background-color: red;
+}
+#partner-find .btn {
+    padding:0.5em;
 }
