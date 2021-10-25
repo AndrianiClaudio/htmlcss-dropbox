@@ -141,8 +141,8 @@ a:hover {
     margin-right: calc(10% / 2);
 }
 /* TOP */
-.mg-t-12 {
-    margin-top: 12em;
+.mg-t-6 {
+    margin-top: 6em;
 }
 .mg-t-5 {
     margin-top: 5em;
@@ -318,6 +318,12 @@ header .logo {
     color: var(--button-color);
 }
 /* /#PROFESSIONAL PLAN */
+/* ENTERPRISE-ROW-PLAN */
+.width-100.test {
+    height: 100px;
+    background-color: yellow;
+}
+/* /ENTERPRISE-ROW-PLAN */
 /* /BUSINESS PLAN */
 /* --- FINE MAIN --- */
 /* /main */
