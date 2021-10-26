@@ -1,12 +1,18 @@
 /* VARIABILI COLORE */
 :root {
-    --button-color: #0061ff;
+    /* COLORI */
+    --blue-color: #0061ff;
     --border-color: lightgrey;
     --jumbo-color: #b4d0e7;
+    /* /COLORI */
+    /* FONT-SIZE */
     --small-font: 0.83em;
     --medium-font: 0.975em;
+    /* /FONT-SIZE */
 }
 /* FINE VARIABILI */
+
+/* GENERALE */
 * {
     margin: 0 auto;
     padding: 0;
@@ -17,7 +23,7 @@ html {
     font-size: 100%;
     font-weight: 500;
 }
-/* --- CLEARFIX --- */
+/* CLEARFIX */
 .clearfix::after {
     content: '';
     display: table;
@@ -28,28 +34,45 @@ html {
     display: table;
     clear: left;
 }
-/* --- FINE CLEARFIX --- */
-
+/*  /CLEARFIX  */
+/* APPLICAZIONE COLORI */
+.jumbo-back {
+    background-color: var(--jumbo-color);
+}
+.back-blue-color-white {
+    background-color: var(--blue-color);
+    color: white
+}
+.blue-color {
+    color: var(--blue-color);
+}
+/* /APPLICAZIONE COLORI */
+/* APPLICAZIONE FONT-SIZE */
 h1 {
     font-size: 4.3em;
 }
-h2,[href="#business-plan"] {
+h2,.h2-font {
     font-size: 2.76em;
 }
 h3 {
     font-size: 1.67em;
 }
+.medium-font {
+    font-size: var(--medium-font);
+}
+.small-font {
+    font-size: var(--small-font);
+}
+/* /APPLICAZIONE FONT-SIZE */
 .underline {
     text-decoration: underline;
 }
-
-/* --- LIST:generale --- */
+/*  LIST */
 ul {
     list-style-type: none;
 }
-/* --- /LIST:generale --- */
-
-/* --- LINK:generale --- */
+/*  /LIST  */
+/*  LINK  */
 a {
     text-decoration: none;
 }
@@ -61,31 +84,26 @@ a:hover {
 a:hover {
     cursor: pointer;
 }
-/* --- FINE LINK:generale --- */
-/* --- BORDER ---*/
-.brd-1 {
-    border: 1px solid var(--border-color);
-}
-.brd-b-1 {
-    border-bottom: 1px solid var(--border-color);
-}
-/* --- FINE BORDER */
-.txt-blue {
-    color: var(--button-color);
-}
-/* --- FLOAT --- */
+/*  FINE LINK:generale  */
+/*  FLOAT  */
 .float-l {
     float: left;
 }
 .float-r {
     float:right;
 }
-/* --- FINE FLOAT */
-/* --- BUTTON --- */
-.btn-blue {
+/*  FINE FLOAT */
+/*  BORDER */
+.brd-1 {
+    border: 1px solid var(--border-color);
+}
+.brd-b-1 {
+    border-bottom: 1px solid var(--border-color);
+}
+/*  FINE BORDER */
+/*  BUTTON  */
+.btn {
     text-align: center;
-    background-color: var(--button-color);
-    color: white;
     font-size: var(--medium-font);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -93,14 +111,14 @@ a:hover {
 .btn-blue:hover,
 .btn-blue:visited {
     color: white;
-    background-color: var(--button-color);
+    background-color: var(--blue-color);
 }
 .btn-short {
     padding-right: 1.25em;
     padding-left: 1.25em;
 }
-/* --- FINE BUTTON --- */
-/* --- WIDTH --- */
+/*  FINE BUTTON  */
+/*  WIDTH  */
 .width-100 {
     width: 100%;
 }
@@ -113,17 +131,11 @@ a:hover {
 .width-90 {
     width:90%;
 }
-.width-85 {
-    width: 85%;
-}
 .width-75 {
     width: 75%;
 }
 .width-70 {
     width: 70%;
-}
-.width-50 {
-    width: 50%;
 }
 .width-65 {
     width: 65%;
@@ -131,37 +143,34 @@ a:hover {
 .width-60 {
     width: 60%;
 }
+.width-50 {
+    width: 50%;
+}
+.width-40 {
+    width: 40%;
+}
 .width-35 {
     width: 35%;
 }
 .width-30 {
     width: 30%;
 }
-.width-40 {
-    width: 40%;
-}
 .width-25 {
     width: 25%;
-}
-.width-20 {
-    width: 20%;
 }
 .width-10 {
     width: 10%;
 }
-/* --- FINE WIDTH --- */
-/* --- PADDING  --- */
+/*  FINE WIDTH  */
+/*  PADDING   */
 /* TOP */
-.pd-t-6 {
-    padding-top: 6em;
+.pd-t-5 {
+    padding-top: 5em;
 }
 .pd-t-1 {
     padding-top: 1em;
 }
 /* RIGHT */
-.pd-r-3 {
-    padding-right: 3em;
-}
 .pd-r-2 {
     padding-right: 2em;
 }
@@ -169,11 +178,8 @@ a:hover {
     padding-right: 0.5em;
 }
 /* BOTTOM */
-.pd-b-6 {
-    padding-bottom: 6em;
-}
-.mg-b-4 {
-    margin-bottom: 6em;
+.pd-b-5 {
+    padding-bottom: 5em;
 }
 .pd-b-1 {
     padding-bottom: 1em;
@@ -185,20 +191,13 @@ a:hover {
 .pd-l-2 {
     padding-left: 2em;
 }
-/* --- FINE PADDING --- */
-
-/* --- MARGIN --- */
+/*  FINE PADDING  */
+/*  MARGIN  */
 .mg-calc {
     margin-left: calc(10% / 2);
     margin-right: calc(10% / 2);
 }
-.mg-l-0 {
-    margin-left: 0;
-}
 /* TOP */
-.mg-t-6 {
-    margin-top: 6em;
-}
 .mg-t-5 {
     margin-top: 5em;
 }
@@ -212,9 +211,6 @@ a:hover {
     margin-top: 1em;
 }
 /* RIGHT */
-.mg-r-1 {
-    margin-right:1em;
-}
 .mg-r-1dot5 {
     margin-right:1.5em;
 }
@@ -228,6 +224,12 @@ a:hover {
 .mg-b-3 {
     margin-bottom: 3em;
 }
+.mg-b-4 {
+    margin-bottom: 6em;
+}
+.mg-b-2dot5 {
+    margin-bottom: 2.5em;
+}
 /* LEFT */
 .mg-l-1 {
     margin-left: 1em;
@@ -235,42 +237,34 @@ a:hover {
 .mg-l-1dot5 {
     margin-left:1.5em;
 }
-/* --- FINE MARGIN --- */
-/* --- HEIGHT --- */
-.height-5 {
-    height: 5em;
-}
-/* --- FINE HEIGHT --- */
-/* --- HEADER --- */
-.inline-item {
+/*  FINE MARGIN  */
+/*  HEADER  */
+#fixed-bar div,
+#fixed-bar li,
+#fixed-bar nav{
     display: inline-block;
 }
 /* FIXED-BAR */
+#fixed-bar ,
+#fixed-bar li{
+    height: 5em;
+}
 #fixed-bar {
-    display: inline-block;
-    background-color: white;
     position: fixed;
+    background-color: white;
     line-height: 5em;
     height: 5em;
     top:0;
     left:0;
     z-index: 10;
 }
-#logo, #fixed-bar a {
+#logo, 
+#fixed-bar a {
     vertical-align: middle;
 }
-#fixed-bar nav {
-    display: inline-block;
-}
 /* /FIXED-BAR */
-.jumbo-container {
-    background-color: var(--jumbo-color);
-}
-.jumbo-paragraph > p {
-    font-size: var(--medium-font);
-}
-/* /JUMBO */
-/*--- FINE HEADER --- */
+
+/* FINE HEADER  */
 /* RADIO BUTTON FAKE */
 .radio-billing-mode {
     line-height: 6em;
@@ -293,7 +287,7 @@ a:hover {
     border-radius: 10px;
 }
 .radio-blue{
-    background-color: var(--button-color);
+    background-color: var(--blue-color);
 }
 .radio-white-small {
     position:absolute;
@@ -315,9 +309,6 @@ a:hover {
 .plan-name {
     line-height: 3em;
 }
-.small-txt {
-    font-size: var(--small-font);
-}
 .plan-price {
     line-height: 2em;
 }
@@ -335,11 +326,11 @@ a:hover {
 }
 /* link acquista ora */
 .buy-now {
-    color: var(--button-color);
+    color: var(--blue-color);
     text-decoration: underline;
 }
 .buy-now:visited {
-    color: var(--button-color);
+    color: var(--blue-color);
 }
 /* link acquista ora */
 .mini-hr {
@@ -348,7 +339,7 @@ a:hover {
     border: 0.1px solid var(--border-color);
 }
 .plan-highlight i {
-    color: var(--button-color);
+    color: var(--blue-color);
 }
 /* /#PROFESSIONAL PLAN */
 /* ENTERPRISE-ROW-PLAN */
@@ -375,14 +366,14 @@ a:hover {
     font-size: var(--medium-font);
 }
 /* /PARTNER FIND */
-/* --- FINE MAIN --- */
+/*  FINE MAIN  */
 /* /main */
 /* footer */
 /* /footer */
 
-
-
-
+#client-info .width-50 {
+    margin-left: 0;
+}
 
 .color1 {
     background-color: red;
