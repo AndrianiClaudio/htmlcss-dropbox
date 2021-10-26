@@ -360,47 +360,37 @@ form .inblock input:not(:checked) + label::before {
 #client-info div.width-52 {
     margin-left: 0;
 }
-.relative {
-    position: relative;
-    height: 100%;
-}
-.width-100.relative {
-    height: 400px;
-    background-color: violet;
-}
-.width-25.relative{
-    background-color: red;
-}
-.width-50.relative {
-    background-color: blue;
-}
 #client-info div[id$="-logo"] {
-    position: absolute;
-    height: 50%;
+    position: relative;
 }
 #designit-logo,
-#wbr-logo { 
-    background-color: aliceblue;
+#wbr-logo {
+    margin-left: 0;
+}
+#designit-logo .absolute,
+#wbr-logo .absolute { 
+    /* background-color: aliceblue; */
+    height: 200px;
     top:0;
     left:0;
     z-index: 11;
 }
-#asu-logo,
-#hearst-logo {
+#asu-logo .absolute,
+#hearst-logo .absolute {
     background-color: coral;
     top: 0;
     left: 50%;
     z-index: 10;
 }
-#uniflori-logo,
-#lovely-logo {
+#uniflori-logo .absolute,
+#lovely-logo .absolute {
     background-color: crimson;
     top: 50%;
     left: 0;
     z-index: 9;
 }
-#topps-logo,
-#cco-logo {
+#topps-logo .absolute,
+#cco-logo .absolute {
     background-color: darkorchid;
     top: 50%;
     left: 50%;
