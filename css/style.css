@@ -48,6 +48,9 @@ html {
 .blue-color {
     color: var(--blue-color);
 }
+.border-color {
+    color: var(--border-color);
+}
 /* /APPLICAZIONE COLORI */
 /* APPLICAZIONE FONT-SIZE */
 h1 {
@@ -68,6 +71,9 @@ h3 {
 /* /APPLICAZIONE FONT-SIZE */
 .underline {
     text-decoration: underline;
+}
+.bold {
+    font-weight: 800;
 }
 /*  LIST */
 ul {
@@ -303,38 +309,19 @@ form .inblock input:not(:checked) + label::before {
     display: none;
 }
 /* /RADIO BUTTON */
-/* #PROFESSIONAL PLAN */
+/* #BUSINESS PLAN */
+#business-plan .width-30 {
+    min-height: 67em;
+}
 .plan-header{
     line-height: 3em;
     text-align: center;
 }
-.plan-name {
-    line-height: 3em;
-}
-.plan-price {
-    line-height: 2em;
-}
-.plan-payment-frequency {
-    line-height: 1.5em;
-    color: darkgray;
-}
-.plan-buy-try .btn-blue,
-.plan-buy-try > div > span,
-.plan-highlight li{
-    font-size: var(--small-font)
-}
-.plan-buy-try a.btn-blue {
-    display: block;
-}
-/* link acquista ora */
-.buy-now {
-    color: var(--blue-color);
-    text-decoration: underline;
-}
-.buy-now:visited {
+.blue-color.underline:visited,
+.blue-color.underline:active
+{
     color: var(--blue-color);
 }
-/* link acquista ora */
 .mini-hr {
     margin-left: 0;
     width: 25%;
@@ -343,19 +330,6 @@ form .inblock input:not(:checked) + label::before {
 .plan-highlight i {
     color: var(--blue-color);
 }
-/* /#PROFESSIONAL PLAN */
-/* ENTERPRISE-ROW-PLAN */
-#enterprise-plan .plan-name{
-    line-height: 1.5em;
-}
-.plan-span-bold {
-    font-size: var(--medium-font);
-    font-weight: bold;
-}
-.plan-span {
-    font-size: var(--small-font);
-}
-/* /ENTERPRISE-ROW-PLAN */
 /* /BUSINESS PLAN */
 /* PARTNER FIND */  
 .partner-paragraph {
@@ -394,10 +368,6 @@ form .inblock input:not(:checked) + label::before {
 }
 .color5 {
     background-color: black;
-}
-
-#business-plan .width-30 {
-    min-height: 67em;
 }
 
 #feature p {
