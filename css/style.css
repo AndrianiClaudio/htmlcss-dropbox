@@ -2,7 +2,7 @@
 :root {
     /* COLORI */
     --blue-color: #0061ff;
-    --border-color: lightgrey;
+    --border-color: #999;
     --jumbo-color: #b4d0e7;
     /* /COLORI */
     /* FONT-SIZE */
@@ -39,9 +39,11 @@ html {
 .jumbo-back {
     background-color: var(--jumbo-color);
 }
-.back-blue-color-white {
+.back-blue {
     background-color: var(--blue-color);
-    color: white
+}
+.color-white {
+    color: white;
 }
 .blue-color {
     color: var(--blue-color);
@@ -238,69 +240,69 @@ a:hover {
     margin-left:1.5em;
 }
 /*  FINE MARGIN  */
+.inblock {
+    display: inline-block;
+}
 /*  HEADER  */
+/* FIXED-BAR */
+#fixed-bar {
+    position: fixed;
+    background-color: white;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+#fixed-bar ,
+#fixed-bar li{
+    height: 5em;
+    line-height: 5em;
+}
 #fixed-bar div,
 #fixed-bar li,
 #fixed-bar nav{
     display: inline-block;
-}
-/* FIXED-BAR */
-#fixed-bar ,
-#fixed-bar li{
-    height: 5em;
-}
-#fixed-bar {
-    position: fixed;
-    background-color: white;
-    line-height: 5em;
-    height: 5em;
-    top:0;
-    left:0;
-    z-index: 10;
 }
 #logo, 
 #fixed-bar a {
     vertical-align: middle;
 }
 /* /FIXED-BAR */
-
 /* FINE HEADER  */
-/* RADIO BUTTON FAKE */
-.radio-billing-mode {
-    line-height: 6em;
-}
-.container-check,
-.container-nocheck {
+/* RADIO BUTTON */
+form .inblock input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
     display: inline-block;
-    line-height: 2em;   
+    border: 2px solid var(--border-color);
+    vertical-align: sub;
+    border-radius: 50%;
 }
-.container-check *,
-.container-nocheck *{
-    vertical-align: middle;
-    display: inline-block;
+form .inblock input[type="radio"]:checked {
+    opacity: 0;
 }
-.radio-blue,
-.radio-white {
+form .inblock label {
     position: relative;
-    height: 1em;
-    width: 1em;
-    border-radius: 10px;
+    font-size: 1em;
 }
-.radio-blue{
-    background-color: var(--blue-color);
-}
-.radio-white-small {
-    position:absolute;
+form .inblock input:checked + label::before {
+    position: absolute;
+    display: inline-block;
     top: 50%;
-    left: 50%;
-    z-index: 3;
-    transform: translate(-50%,-50%);
-    height: 0.5em;
-    border-radius: 10px;
-    width: 0.5em;
-    background-color: white;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    content: '';
+    width: 11px;
+    height: 11px;
+    margin-left: -23px;
+    border: 4.5px solid var(--blue-color);
+    border-radius: 50%;
 }
-/* /RADIO BUTTON FAKE */
+form .inblock input:not(:checked) + label::before {
+    display: none;
+}
+/* /RADIO BUTTON */
 /* #PROFESSIONAL PLAN */
 .plan-header{
     line-height: 3em;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,8 +76,8 @@
                         </li>
                         <!-- /ACCEDI -->
                         <!-- INIZIA-BTN-BLUE -->
-                        <li class="pd-l-2">
-                            <a class="btn back-blue-color-white btn-short">inizia</a>
+                        <li class="pd-l-2 color-white">
+                            <a class="btn back-blue btn-short">inizia</a>
                         </li>
                         <!-- /INIZIA-BTN-BLUE -->
                     </ul>
@@ -92,24 +92,24 @@
         <div class="jumbo-back width-100">
             <!-- CONTAINER-80 -->
             <div class="width-80 pd-t-5">
-                <!-- TITOLO -->
+                <!-- TITLE -->
                 <div class="mg-b-2">
                     <h1>Tutto ci&ograve; che ti serve per il lavoro&comma; in un unico posto</h1>
                 </div>
-                <!-- /TITOLO -->
-                <!-- CONTENITORE CLEARFIX  -->
+                <!-- /TITLE -->
+                <!-- CONTAINER CLEARFIX  -->
                 <div class="clearfix-left">
                     <!-- CONTAINER-35: FLOAT-L -->
-                    <!-- TESTO -->
+                    <!-- ...TXT/ -->
                     <div class="width-35 float-l pd-r-2">
-                        <!-- PARAGRAFO -->
+                        <!-- PARAGRAPH -->
                         <div>
                             <p class="medium-font">Finalmente tutti i suoi strumenti&comma; contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business &egrave; pi&ugrave; di uno spazio di arichiviazione sicuro&#58; &egrave; un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                         </div>
-                        <!-- /PARAGRAFO -->
+                        <!-- /PARAGRAPH -->
                         <!-- INIZIA PROVA GRATUITA -->
-                        <div class="mg-t-2 mg-b-1">
-                            <a href="#" class="btn back-blue-color-white btn-short">Inizia la tua prova gratuita</a>
+                        <div class="mg-t-2 mg-b-1 color-white">
+                            <a href="#" class="btn back-blue btn-short">Inizia la tua prova gratuita</a>
                         </div>
                         <!-- /INIZIA PROVA GRATUITA -->
                         <!-- ANNULLA IN QUALSIASI MOMENTO -->
@@ -127,45 +127,52 @@
                     </div>
                     <!-- /CONTAINER-35:FLOAT-L -->
                     <!-- CONTAINER-65:FLOAT-R -->
-                    <!-- IMMAGINE -->
+                    <!-- ...IMG/ -->
                     <div class="width-65 float-r">
                         <img src="img/jumbo.png" alt="Immagine struttura Dropbox" class="width-100">
                     </div>
                     <!-- /CONTAINER-65:FLOAT-R -->
                 </div>     
+                <!-- /CONTAINER CLEARFIX  -->
             </div>
             <!-- /CONTAINER-80 -->
         </div>
         <!-- JUMBO -->
     </header>
     <!-- /HEADER -->
-    <!-- main section -->
+    <!-- MAIN -->
     <main>
+        <!-- CONTAINER-70 -->
         <div class="width-70">
-            <!-- section col business-plan -->
+            <!-- SEZIONE PIANI DROPBOX BUSINESS -->
             <section id="business-plan" class="width-100">
+                <!-- CONTAINER-CLEARFIX -->
                 <div class="row clearfix">
-                    <!-- header -->
-                    <header>
-                        <h2>Trova il piano Dropbox Business che fa per te</h2>
-                        <!-- radio button scelta fatturazione -->
-                        <div class="radio-billing-mode">
-                            <div class="container-check">
-                                <div class="radio-blue">
-                                    <div class="radio-white-small">
-                                    </div>
-                                </div>
-                                <span>Fatturazione mensile</span>
-                            </div>
-                            <div class="container-nocheck pd-l-1">
-                                <div class="radio-white brd-1">
-                                </div>
-                                <span>Fatturazione annuale</span>
-                            </div>
+                    <!-- HEADER -->
+                    <header class="mg-b-2">
+                        <!-- TITLE -->
+                        <div class="mg-t-5">
+                            <h2>Trova il piano Dropbox Business che fa per te</h2>
                         </div>
-                        <!-- /radio button scelta fatturazione -->
+                        <!-- TITLE -->
+                        <!-- FORM: RADIO-BUTTON: BILLING-MODE -->
+                        <form action="#" method="post">
+                            <!-- CONTAINER-INLINE --> 
+                            <div class="inblock mg-t-3">
+                                <!-- RADIO: FATTURAZIONE MENSILE -->
+                                <input type="radio" name="billing-mode" id="monthly" checked>
+                                <label for="monthly">Fatturazione mensile</label>
+                                <!-- RADIO: FATTURAZIONE MENSILE -->
+                                <!-- RADIO: FATTURAZIONE ANNUALE -->
+                                <input type="radio" name="billing-mode" id="yearly">
+                                <label for="yearly">Fatturazione mensile</label>
+                                <!-- RADIO: FATTURAZIONE ANNUALE -->
+                            </div>
+                            <!-- CONTAINER-INLINE -->
+                        </form>
+                        <!-- /FORM: RADIO-BUTTON: BILLING-MODE -->
                     </header>
-                    <!-- /header -->
+                    <!-- /HEADER -->
                     <!-- riga colonne floattanti, plan: professional, standard, advanced -->
                     <div class="mg-b-3">
                         <!-- colonna PROFESSIONAL -->
@@ -635,6 +642,7 @@
                         <!-- /colonna ADVANCED -->
                     </div>
                 </div>
+                <!-- /CONTAINER-CLEARFIX -->
                 <div class="row">
                     <!-- /riga colonne floattanti, plan: professional, standard, advanced -->
                     <!-- riga enterprise -->
@@ -682,7 +690,7 @@
                     <!-- riga enterprise -->
                 </div>
             </section>
-            <!-- /section col business-plan -->
+            <!-- /SEZIONE PIANI DROPBOX BUSINESS -->
             <!-- section partner-find -->
             <section id="partner-find" class="pd-b-5">
                 <div class="width-100 clearfix">
@@ -765,12 +773,13 @@
             </section>
             <!-- /section clienti -->
         </div>
+        <!-- /CONTAINER-70 -->
     </main>
-    <!-- /main section -->
-    <!-- footer section -->
+    <!-- /MAIN -->
+    <!-- FOOTER -->
     <footer>
     </footer>
-    <!-- /footer section -->
+    <!-- /FOOTER -->
 </body>
 
 </html>
