@@ -4,7 +4,7 @@
     --border-color: lightgrey;
     --jumbo-color: #b4d0e7;
     --small-font: 0.83em;
-    --medium-font: 0.935em;
+    --medium-font: 0.975em;
 }
 /* FINE VARIABILI */
 * {
@@ -37,7 +37,10 @@ h2,[href="#business-plan"] {
     font-size: 2.76em;
 }
 h3 {
-    font-size: 1.725em;
+    font-size: 1.67em;
+}
+.underline {
+    text-decoration: underline;
 }
 
 /* --- LIST:generale --- */
@@ -389,4 +392,12 @@ a:hover {
 }
 .color5 {
     background-color: black;
+}
+
+#business-plan .width-30 {
+    min-height: 67em;
+}
+
+#feature p {
+    font-size: var(--medium-font);
 }
