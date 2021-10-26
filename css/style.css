@@ -4,7 +4,7 @@
     --border-color: lightgrey;
     --jumbo-color: #b4d0e7;
     --small-font: 0.83em;
-    --medium-font: 0.85em;
+    --medium-font: 0.935em;
 }
 /* FINE VARIABILI */
 * {
@@ -163,6 +163,9 @@ a:hover {
 .pd-b-6 {
     padding-bottom: 6em;
 }
+.mg-b-4 {
+    margin-bottom: 6em;
+}
 .pd-b-1 {
     padding-bottom: 1em;
 }
@@ -248,34 +251,14 @@ a:hover {
     display: inline-block;
 }
 /* /FIXED-BAR */
-/* JUMBO */
 .jumbo-container {
     background-color: var(--jumbo-color);
 }
-p {
+.jumbo-paragraph > p {
     font-size: var(--medium-font);
 }
-/* .jumbo-title > h1{
-    font-size: 4.3em;
-} */
-/* .jumbo-paragraph > p,*/
-
-/* .jumbo-container .clearfix-left .width-35 {
-    font-size: var(--medium-font);
-} */
-/* .jumbo-container .clearfix-left .width-35{
-    font-size: var(--small-font);
-} */
 /* /JUMBO */
 /*--- FINE HEADER --- */
-/* --- MAIN --- */
-/* BUSINESS PLAN */
-/* h2.title {
-    font-size: 2.5em;
-} */
-/* #business-plan .row .col.mg-calc {
-    margin: 0 calc(10% / 2);
-} */
 /* RADIO BUTTON FAKE */
 .radio-billing-mode {
     line-height: 6em;
@@ -320,18 +303,11 @@ p {
 .plan-name {
     line-height: 3em;
 }
-/* .plan-name > h3 {
-    font-size: 1.5em;
-    font-weight: 800;
-} */
 .small-txt {
     font-size: var(--small-font);
 }
 .plan-price {
     line-height: 2em;
-}
-.plan-price > span{
-    font-weight: bold;
 }
 .plan-payment-frequency {
     line-height: 1.5em;
@@ -341,7 +317,6 @@ p {
 .plan-buy-try > div > span,
 .plan-highlight li{
     font-size: var(--small-font)
-    /* font-weight: 400; */
 }
 .plan-buy-try a.btn-blue {
     display: block;
@@ -366,7 +341,6 @@ p {
 /* /#PROFESSIONAL PLAN */
 /* ENTERPRISE-ROW-PLAN */
 #enterprise-plan .plan-name{
-    /* font-size: 1.5em; */
     line-height: 1.5em;
 }
 .plan-span-bold {
@@ -379,11 +353,6 @@ p {
 /* /ENTERPRISE-ROW-PLAN */
 /* /BUSINESS PLAN */
 /* PARTNER FIND */  
-/* .partner-title > h3 {
-    font-size: 1.5em;
-    font-weight: 800;
-    background-color: darkgoldenrod;
-} */
 .partner-paragraph {
     font-size: var(--medium-font);
     line-height: 1.5em;
