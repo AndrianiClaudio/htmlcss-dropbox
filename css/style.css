@@ -149,10 +149,13 @@ a:hover {
 /*  FINE BUTTON  */
 /*  WIDTH  */
 .width-calcpx {
-    width: calc(100% - 800px);
+    width: calc(100% - 920px);
 }
-.width-200px {
-    width: 200px;
+.width-230px {
+    width: 230px;
+}
+.width-8 {
+    width: 8%;
 }
 .width-100 {
     width: 100%;
@@ -163,8 +166,12 @@ a:hover {
 .width-90 {
     width:90%;
 }
+
 .width-80 {
     width: 80%;
+}
+.width-85 {
+    width: 85%;
 }
 .width-75 {
     width: 75%;
@@ -389,8 +396,8 @@ form .inblock input:not(:checked) + label::before {
     margin-left: 0;
 }
 #client-info [id$="-logo"] {
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 230px;
     position: relative;
     text-align: center;
 }
@@ -425,8 +432,11 @@ form .inblock input:not(:checked) + label::before {
 #client-info .row.width-100 {
     background-color: var(--jumbo-color);
 }
-#client-info h3 {
+.arizona-color {
     color: var(--arizona-color);
+}
+.mg-l-0 {
+    margin-left: 0;
 }
 /* /SFONDI BLOCCHI LOGO */
 /* /CLIENT INFO */
@@ -459,8 +469,5 @@ footer ul.small-font li {
 }
 .grey-text {
     color: var(--border-color)
-}
-.width-8 {
-    width: 8%;
 }
 /* /FOOTER */
