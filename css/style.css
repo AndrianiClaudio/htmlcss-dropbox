@@ -336,9 +336,9 @@ a:hover {
 }
 /*  HEADER  */
 /* FIXED-BAR */
-#fixed-bar li:hover:not(#login) {
+#fixed-bar li:hover:not(#login,#start) {
     cursor: pointer;
-    border-bottom: 5px solid var(--darkgrey-color);
+    box-shadow: inset 0 -4px 0 var(--darkgrey-color);
 }
 #fixed-bar {
     position: fixed;
@@ -348,13 +348,13 @@ a:hover {
     z-index: 10;
 }
 #fixed-bar ,
-#fixed-bar li
+#fixed-bar
 {
     height: 5em;
     line-height: 5em;
 }
-#fixed-bar div,
-#fixed-bar li,
+#fixed-bar div:not(.hidden-container),
+#fixed-bar li:not(.hidden-container),
 #fixed-bar nav{
     display: inline-block;
 }
@@ -504,3 +504,28 @@ footer ul.medium-font li {
     line-height: 2em;
 }
 /* /FOOTER */
+.hidden-container {
+    display: none;
+}
+#fixed-bar .float-l li:hover .hidden-container {
+    display: block;
+    position: absolute;
+    min-height: 50px;
+    max-height: 250px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--border-color);
+}
+.hidden-container h4 {
+    margin-left: 1.5em
+}
+.hidden-container li {
+    margin-left: 2em;
+}
+
+.hidden-container{
+    line-height: 0.8em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
