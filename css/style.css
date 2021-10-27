@@ -57,6 +57,9 @@ html {
 .color-white {
     color: white;
 }
+.back-white {
+    background-color: white;
+}
 .blue-color {
     color: var(--blue-color);
 }
@@ -145,6 +148,9 @@ a:hover {
 }
 /*  FINE BUTTON  */
 /*  WIDTH  */
+.width-calcpx {
+    width: calc(100% - 800px);
+}
 .width-200px {
     width: 200px;
 }
@@ -368,63 +374,40 @@ form .inblock input:not(:checked) + label::before {
     font-size: var(--medium-font);
 }
 /* /PARTNER FIND */
-/*  FINE MAIN  */
-/* FOOTER */
 /* CLIENT INFO */
-#client-info div.width-52 {
+.absolute {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.absolute img {
+    filter: invert(100);
+}
+
+#client-info  {
     margin-left: 0;
 }
-.width-12dot5 {
-    width: 12.5%;
-}
-
-footer path:not(.width-50 path) {
-    fill: white;
-}
-
-/* CONTAINER PRINCIPALI-ID */
 #client-info [id$="-logo"] {
     height: 200px;
     width: 200px;
     position: relative;
-    /* text-align: center; */
+    text-align: center;
 }
-#client-info [id$="-logo"] svg {
-    /* position: absolute; */
-}
- 
+/* SFONDI BLOCCHI LOGO */
 #designit-logo {
     border: 10px solid var(--designit-border-color);
     background-color: var(--designit-color);
 }
-
-#designit-logo svg {
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    line-height: 200px; */
-}
-
-#uniflori-logo {
-    background-color: var(--florida-color);
-}
-/* #unifiori-logo svg {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}    */
+ 
 #asu-logo {
     background-color: var(--arizona-color);
 }
 #topps-logo {
     background-color: var(--topps-color);
 }
-
-.width-200px {
-    width: 200px;
-}
-.width-calcpx {
-    width: calc(100% - 800px);
+#uniflori-logo {
+    background-color: var(--florida-color);
 }
 #world-bic-logo {
     background-color: var(--world-bicycle-color);
@@ -441,14 +424,14 @@ footer path:not(.width-50 path) {
 
 #client-info .row.width-100 {
     background-color: var(--jumbo-color);
-    height: 250px;
 }
-#prova-drop {
+#client-info h3 {
     color: var(--arizona-color);
 }
-.back-white {
-    background-color: white;
-}
+/* /SFONDI BLOCCHI LOGO */
+/* /CLIENT INFO */
+/*  FINE MAIN  */
+/* FOOTER */
 .brd-t-1 {
     border-top: 1px solid var(--border-color);
 }
@@ -477,3 +460,7 @@ footer ul.small-font li {
 .grey-text {
     color: var(--border-color)
 }
+.width-8 {
+    width: 8%;
+}
+/* /FOOTER */
