@@ -17,9 +17,9 @@
     --arizona-color: #61082b;
     --topps-color:  #ff1c1c;
     --world-bicycle-color: #d5001f;
-    --lovely-planet-color: #0d2481;
+    --lonely-planet-color: #0d2481;
     --hearst-color:  #b4d0e7;
-    --clear-channel-color: ##ffd830;
+    --clear-channel-color: #ffd830;
     /* /FOOTER-BACK */
 }
 /* FINE VARIABILI */
@@ -390,7 +390,7 @@ footer path:not(.width-50 path) {
     /* text-align: center; */
 }
 #client-info [id$="-logo"] svg {
-    position: absolute;
+    /* position: absolute; */
 }
  
 #designit-logo {
@@ -399,19 +399,72 @@ footer path:not(.width-50 path) {
 }
 
 #designit-logo svg {
-    top: 50%;
+    /* top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    line-height: 200px; */
 }
 
 #uniflori-logo {
     background-color: var(--florida-color);
 }
-#unifiori-logo svg {
+/* #unifiori-logo svg {
     top: 50%;
     left: 50%;
-    transform: translate(0%,-50%);
+    transform: translate(-50%,-50%);
+}    */
+#asu-logo {
+    background-color: var(--arizona-color);
 }
+#topps-logo {
+    background-color: var(--topps-color);
+}
+
 .width-200px {
     width: 200px;
+}
+.width-calcpx {
+    width: calc(100% - 800px);
+}
+#world-bic-logo {
+    background-color: var(--world-bicycle-color);
+}
+#lonely-logo {
+    background-color: var(--lonely-planet-color);
+}   
+#hearst-logo {
+    background-color: var(--hearst-color);
+}
+#clear-channel-logo {
+    background-color: var(--clear-channel-color);
+}
+
+#client-info .row.width-100 {
+    background-color: var(--jumbo-color);
+    height: 250px;
+}
+#prova-drop {
+    color: var(--arizona-color);
+}
+.back-white {
+    background-color: white;
+}
+.brd-t-1 {
+    border-top: 1px solid var(--border-color);
+}
+.pd-b-3 {
+    padding-bottom: 3em;
+}
+.pd-b-2 {
+    padding-bottom: 2em;
+}
+#faq .width-10 {
+    text-align:right;
+}
+#faq li{
+    line-height: 100%;
+}
+footer {
+    height: 200px;
+    background-color: black;
 }
