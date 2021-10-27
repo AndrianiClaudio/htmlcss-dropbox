@@ -298,6 +298,9 @@ a:hover {
 .mg-r-1dot5 {
     margin-right:1.5em;
 }
+.mg-r-2 {
+    margin-right: 2em;
+}
 /* BOTTOM */
 .mg-b-1dot5 {
     margin-bottom: 1.5em;
@@ -324,12 +327,19 @@ a:hover {
 .mg-l-1dot5 {
     margin-left:1.5em;
 }
+.mg-l-2 {
+    margin-left: 2em;
+}
 /*  FINE MARGIN  */
 .inblock {
     display: inline-block;
 }
 /*  HEADER  */
 /* FIXED-BAR */
+#fixed-bar li:hover:not(#login) {
+    cursor: pointer;
+    border-bottom: 5px solid var(--darkgrey-color);
+}
 #fixed-bar {
     position: fixed;
     background-color: white;
@@ -338,7 +348,8 @@ a:hover {
     z-index: 10;
 }
 #fixed-bar ,
-#fixed-bar li{
+#fixed-bar li
+{
     height: 5em;
     line-height: 5em;
 }
@@ -347,7 +358,9 @@ a:hover {
 #fixed-bar nav{
     display: inline-block;
 }
-#logo, 
+#logo {
+    vertical-align: sub;
+}
 #fixed-bar a {
     vertical-align: middle;
 }
