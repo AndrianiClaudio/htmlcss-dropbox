@@ -10,6 +10,17 @@
     --jumbo-p-font: 0.97em;
     --medium-font: 0.91em;
     /* /FONT-SIZE */
+    /* FOOTER-BACK */
+    --designit-border-color: #d0e9cd;
+    --designit-color: #a2d39b;
+    --florida-color: #0093ce;
+    --arizona-color: #61082b;
+    --topps-color:  #ff1c1c;
+    --world-bicycle-color: #d5001f;
+    --lovely-planet-color: #0d2481;
+    --hearst-color:  #b4d0e7;
+    --clear-channel-color: ##ffd830;
+    /* /FOOTER-BACK */
 }
 /* FINE VARIABILI */
 
@@ -134,6 +145,9 @@ a:hover {
 }
 /*  FINE BUTTON  */
 /*  WIDTH  */
+.width-200px {
+    width: 200px;
+}
 .width-100 {
     width: 100%;
 }
@@ -337,7 +351,7 @@ form .inblock input:not(:checked) + label::before {
 }
 .hr-mini {
     margin-left: 0;
-    border: 0.1px solid var(--border-color);
+    border: 0.1px solid lightgrey;
 }
 .plan-highlight i {
     color: var(--blue-color);
@@ -360,52 +374,44 @@ form .inblock input:not(:checked) + label::before {
 #client-info div.width-52 {
     margin-left: 0;
 }
-#client-info div[id$="-logo"] {
-    position: relative;
+.width-12dot5 {
+    width: 12.5%;
 }
-#designit-logo,
-#wbr-logo {
-    margin-left: 0;
+
+footer path:not(.width-50 path) {
+    fill: white;
 }
-#designit-logo .absolute,
-#wbr-logo .absolute { 
-    /* background-color: aliceblue; */
+
+/* CONTAINER PRINCIPALI-ID */
+#client-info [id$="-logo"] {
     height: 200px;
-    top:0;
-    left:0;
-    z-index: 11;
+    width: 200px;
+    position: relative;
+    /* text-align: center; */
 }
-#asu-logo .absolute,
-#hearst-logo .absolute {
-    background-color: coral;
-    top: 0;
-    left: 50%;
-    z-index: 10;
+#client-info [id$="-logo"] svg {
+    position: absolute;
 }
-#uniflori-logo .absolute,
-#lovely-logo .absolute {
-    background-color: crimson;
-    top: 50%;
-    left: 0;
-    z-index: 9;
+ 
+#designit-logo {
+    border: 10px solid var(--designit-border-color);
+    background-color: var(--designit-color);
 }
-#topps-logo .absolute,
-#cco-logo .absolute {
-    background-color: darkorchid;
+
+#designit-logo svg {
     top: 50%;
     left: 50%;
-    z-index: 8;
+    transform: translate(-50%,-50%);
 }
-    /* /CLIENT INFO */
-/* /FOOTER */
 
-
-.color1 {
-    background-color: #e4e;
+#uniflori-logo {
+    background-color: var(--florida-color);
 }
-.color2 {
-    background-color: #b46;
+#unifiori-logo svg {
+    top: 50%;
+    left: 50%;
+    transform: translate(0%,-50%);
 }
-.color3 {
-    background-color: #7a6;
+.width-200px {
+    width: 200px;
 }
