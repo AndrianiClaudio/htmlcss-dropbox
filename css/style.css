@@ -444,11 +444,20 @@ form .inblock input:not(:checked) + label::before {
 #client-info  {
     margin-left: 0;
 }
+#client-info [id$="-logo"] a{
+    display: inline-block;
+    line-height: 230px;
+    width: 230px;
+}
 #client-info [id$="-logo"] {
     height: 230px;
     width: 230px;
     position: relative;
     text-align: center;
+}
+#client-info [id$="-logo"] a {
+    height: 230px;
+    width: 230px;
 }
 /* SFONDI BLOCCHI LOGO */
 #designit-logo {
@@ -504,6 +513,9 @@ footer ul.medium-font li {
     line-height: 2em;
 }
 /* /FOOTER */
+
+
+/* HIDDEN CONTAINER --- MENU A TENDINAA */
 .hidden-container {
     display: none;
 }
@@ -529,3 +541,4 @@ footer ul.medium-font li {
     padding: 0;
     line-height: 1.5em;
 }
+/* /HIDDEN CONTAINER --- MENU A TENDINAA */
