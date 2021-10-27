@@ -112,7 +112,7 @@ h4 {
     min-height: 65em;
 }
 /*  LIST */
-ul {
+ul:not(.ltype-cir) {
     list-style-type: none;
 }
 /*  /LIST  */
@@ -540,5 +540,18 @@ footer ul.medium-font li {
     margin: 0;
     padding: 0;
     line-height: 1.5em;
+}
+#client-info .float-r:active .hidden-container {
+    display: block;
+    position: absolute;
+    min-height: 50px;
+    max-height: 250px;
+    padding-top: 1em;
+    right:10em;
+    z-index: 888;
+    padding-bottom: 1em;
+    padding-right: 3em;
+    text-align: left;
+    background-color: var(--border-color);
 }
 /* /HIDDEN CONTAINER --- MENU A TENDINAA */
